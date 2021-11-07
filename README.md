@@ -37,7 +37,7 @@ You can install and start using the template with these steps :
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/Gazentia/crowdfunding-product-page-main.git
+   git clone https://github.com/Gazentia/fem-easybank.git
    ```
 2. Install NPM packages
    ```sh
