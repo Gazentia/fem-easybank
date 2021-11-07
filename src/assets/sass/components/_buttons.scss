@@ -1,0 +1,30 @@
+button,
+.button {
+  display: inline-block;
+  position: relative;
+  padding: 0.875rem 2.1875rem;
+  background-image: linear-gradient(to right, $limeGreen, $brightCyan);
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  color: $white;
+  font-size: $font-sm;
+  font-weight: 400;
+  opacity: 1;
+  transition: opacity 200ms ease-in-out;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.25);
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+  }
+  &:hover::before {
+    opacity: 1;
+  }
+}
